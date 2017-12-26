@@ -1,0 +1,7 @@
+iPhone5,1	6.0	10A405	http://appldnld.apple.com/iOS6/Restore/041-7169.20120919.5Mial/iPhone5,1_6.0_10A405_Restore.ipsw
+iPhone5,1	6.0.1	10A525	http://appldnld.apple.com/iOS6/041-8530.20121101.svtly/iPhone5,1_6.0.1_10A525_Restore.ipsw
+iPhone5,1	6.0.2	10A551	http://appldnld.apple.com/iOS6/041-0779.20121217.Dre43/iPhone5,1_6.0.2_10A551_Restore.ipsw
+iPhone5,1	6.1	10B143	http://appldnld.apple.com/iOS6.1/041-6485.20130128.mt0dy/iPhone5,1_6.1_10B143_Restore.ipsw
+iPhone5,1	6.1.2	10B146	http://appldnld.apple.com/iOS6.1/091-0720.20130215.Xerg4/iPhone5,1_6.1.2_10B146_Restore.ipsw
+iPhone5,1	6.1.3	10B329	http://appldnld.apple.com/iOS6.1/091-2341.20130319.C24tg/iPhone5,1_6.1.3_10B329_Restore.ipsw
+iPhone5,1	6.1.4	10B350	http://appldnld.apple.com/iOS6.1/091-3403.20130502.Xerz1/iPhone5,1_6.1.4_10B350_Restore.ipsw

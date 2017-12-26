@@ -1,0 +1,5 @@
+iPhone4,1	5.0	9A334	http://appldnld.apple.com/iPhone4/041-1317.20111012.UVTgr/iPhone4,1_5.0_9A334_Restore.ipsw
+iPhone4,1	5.0.1	9A405	http://appldnld.apple.com/iPhone4/041-3305.20111109.Bghy6/iPhone4,1_5.0.1_9A405_Restore.ipsw
+iPhone4,1	5.0.1	9A406	http://appldnld.apple.com/iPhone4//041-3417.20111215.Slnt4/iPhone4,1_5.0.1_9A406_Restore.ipsw
+iPhone4,1	5.1	9B179	http://appldnld.apple.com/iOS5/041-1530.20120307.LDDac/iPhone4,1_5.1_9B179_Restore.ipsw
+iPhone4,1	5.1.1	9B206	http://appldnld.apple.com/iOS5.1.1/041-4346.20120427.1RuDG/iPhone4,1_5.1.1_9B206_Restore.ipsw

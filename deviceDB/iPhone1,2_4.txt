@@ -1,0 +1,5 @@
+iPhone1,2	4.0	8A293	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone4/061-7436.20100621.58Yt4/iPhone1,2_4.0_8A293_Restore.ipsw
+iPhone1,2	4.0.1	8A306	http://appldnld.apple.com/iPhone4/061-8616.20100715.phnt4/iPhone1,2_4.0.1_8A306_Restore.ipsw
+iPhone1,2	4.0.2	8A400	http://appldnld.apple.com/iPhone4/061-8802.20100811.XcfpR/iPhone1,2_4.0.2_8A400_Restore.ipsw
+iPhone1,2	4.1	8B117	http://appldnld.apple.com/iPhone4/061-7932.20100908.3fgt5/iPhone1,2_4.1_8B117_Restore.ipsw
+iPhone1,2	4.2.1	8C148	http://appldnld.apple.com/iPhone4/061-9853.20101122.Vfgt5/iPhone1,2_4.2.1_8C148_Restore.ipsw

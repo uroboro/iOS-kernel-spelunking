@@ -1,0 +1,7 @@
+iPod4,1	6.0	10A403	http://appldnld.apple.com/iOS6/Restore/041-0807.20120919.soT6X/iPod4,1_6.0_10A403_Restore.ipsw
+iPod4,1	6.0.1	10A523	http://appldnld.apple.com/iOS6/041-7439.20121101.rgt54/iPod4,1_6.0.1_10A523_Restore.ipsw
+iPod4,1	6.1	10B144	http://appldnld.apple.com/iOS6.1/091-0688.20130128.omwy3/iPod4,1_6.1_10B144_Restore.ipsw
+iPod4,1	6.1.2	10B146	http://appldnld.apple.com/iOS6.1/091-0732.20130215.Mkmt5/iPod4,1_6.1.2_10B146_Restore.ipsw
+iPod4,1	6.1.3	10B329	http://appldnld.apple.com/iOS6.1/091-2655.20130319.Wyt54/iPod4,1_6.1.3_10B329_Restore.ipsw
+iPod4,1	6.1.5	10B400	http://appldnld.apple.com/iOS6.1/091-3505.20131106.PosTg/iPod4,1_6.1.5_10B400_Restore.ipsw
+iPod4,1	6.1.6	10B500	http://appldnld.apple.com/iOS6.1/031-3211.20140221.Placef/iPod4,1_6.1.6_10B500_Restore.ipsw

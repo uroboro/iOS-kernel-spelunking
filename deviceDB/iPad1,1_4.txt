@@ -1,0 +1,7 @@
+iPad1,1	4.2.1	8C148	http://appldnld.apple.com/iPad/061-9857.20101122.VGthy/iPad1,1_4.2.1_8C148_Restore.ipsw
+iPad1,1	4.3	8F190	http://appldnld.apple.com/iPhone4/041-0329.20110311.Cvfre/iPad1,1_4.3_8F190_Restore.ipsw
+iPad1,1	4.3.1	8G4	http://appldnld.apple.com/iPhone4/041-0550.20110325.Zsw6y/iPad1,1_4.3.1_8G4_Restore.ipsw
+iPad1,1	4.3.2	8H7	http://appldnld.apple.com/iPhone4/041-0661.20110414.W9Q8r/iPad1,1_4.3.2_8H7_Restore.ipsw
+iPad1,1	4.3.3	8J3	http://appldnld.apple.com/iPhone4/041-1010.20110503.ScEp3/iPad1,1_4.3.3_8J3_Restore.ipsw
+iPad1,1	4.3.4	8K2	http://appldnld.apple.com/iPhone4/041-1913.20110715.cvTyu/iPad1,1_4.3.4_8K2_Restore.ipsw
+iPad1,1	4.3.5	8L1	http://appldnld.apple.com/iPhone4/041-1957.20110721.6UHaN/iPad1,1_4.3.5_8L1_Restore.ipsw

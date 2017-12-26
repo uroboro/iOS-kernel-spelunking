@@ -1,0 +1,6 @@
+iPhone1,2	2.0	5A347	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-4955.20080710.bgt53/iPhone1,2_2.0_5A347_Restore.ipsw
+iPhone1,2	2.0.1	5B108	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-5134.20080729.Q2W3E/iPhone1,2_2.0.1_5B108_Restore.ipsw
+iPhone1,2	2.0.2	5C1	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-5241.20080818.t5Fv3/iPhone1,2_2.0.2_5C1_Restore.ipsw
+iPhone1,2	2.1	5F136	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-5198.20080909.K3294/iPhone1,2_2.1_5F136_Restore.ipsw
+iPhone1,2	2.2	5G77	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-5778.20081120.Aqw4R/iPhone1,2_2.2_5G77_Restore.ipsw
+iPhone1,2	2.2.1	5H11	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-5828.20090127.aQLi8/iPhone1,2_2.2.1_5H11_Restore.ipsw

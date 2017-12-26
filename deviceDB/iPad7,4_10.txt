@@ -1,0 +1,2 @@
+iPad7,4	10.3.2	14F8089	http://appldnld.apple.com/ios10.3.2/031-95065-20170605-1DBF8E5A-4002-11E7-AE8A-8CF52C6174CC/iPad_7,3_iPad_7,4_10.3.2_14F8089_Restore.ipsw
+iPad7,4	10.3.3	14G60	http://appldnld.apple.com/ios10.3.3/091-23306-20170719-CA9ADE92-6977-11E7-9D4A-379100BA0AE3/iPad_7,3_iPad_7,4_10.3.3_14G60_Restore.ipsw

@@ -1,0 +1,4 @@
+iPod3,1	3.1.1	7C145	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPod/SBML/osx/bundles/061-7163.20090909.NtstR/iPod3,1_3.1.1_7C145_Restore.ipsw
+iPod3,1	3.1.1	7C146	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-7238.20090918.23GhT/iPod3,1_3.1.1_7C146_Restore.ipsw
+iPod3,1	3.1.2	7D11	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-7271.20091008.Tch23/iPod3,1_3.1.2_7D11_Restore.ipsw
+iPod3,1	3.1.3	7E18	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-7473.20100202.4i44t/iPod3,1_3.1.3_7E18_Restore.ipsw

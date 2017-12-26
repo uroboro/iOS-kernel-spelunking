@@ -1,0 +1,4 @@
+iPad1,1	5.0	9A334	http://appldnld.apple.com/iPhone4/041-8357.20111012.DTOrM/iPad1,1_5.0_9A334_Restore.ipsw
+iPad1,1	5.0.1	9A405	http://appldnld.apple.com/iPhone4/041-3308.20111109.Fvgtr/iPad1,1_5.0.1_9A405_Restore.ipsw
+iPad1,1	5.1	9B176	http://appldnld.apple.com/iOS5/041-1536.20120307.XvCtw/iPad1,1_5.1_9B176_Restore.ipsw
+iPad1,1	5.1.1	9B206	http://appldnld.apple.com/iOS5.1.1/041-4292.02120427.Tkk0d/iPad1,1_5.1.1_9B206_Restore.ipsw

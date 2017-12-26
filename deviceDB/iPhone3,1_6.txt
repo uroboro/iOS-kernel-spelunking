@@ -1,0 +1,5 @@
+iPhone3,1	6.0	10A403	http://appldnld.apple.com/iOS6/Restore/041-7175.20120919.wvv7Y/iPhone3,1_6.0_10A403_Restore.ipsw
+iPhone3,1	6.0.1	10A523	http://appldnld.apple.com/iOS6/041-7950.20121101.Lmr45/iPhone3,1_6.0.1_10A523_Restore.ipsw
+iPhone3,1	6.1	10B144	http://appldnld.apple.com/iOS6.1/091-0682.20130128.mefc4/iPhone3,1_6.1_10B144_Restore.ipsw
+iPhone3,1	6.1.2	10B146	http://appldnld.apple.com/iOS6.1/091-0722.20130215.BzrgV/iPhone3,1_6.1.2_10B146_Restore.ipsw
+iPhone3,1	6.1.3	10B329	http://appldnld.apple.com/iOS6.1/091-2610.20130319.Bedr4/iPhone3,1_6.1.3_10B329_Restore.ipsw

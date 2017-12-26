@@ -1,0 +1,4 @@
+iPhone3,3	5.0	9A334	http://appldnld.apple.com/iPhone4/041-9743.20111012.vjhfp/iPhone3,3_5.0_9A334_Restore.ipsw
+iPhone3,3	5.0.1	9A405	http://appldnld.apple.com/iPhone4/041-3304.20111109.Vgtyh/iPhone3,3_5.0.1_9A405_Restore.ipsw
+iPhone3,3	5.1	9B176	http://appldnld.apple.com/iOS5/041-1529.20120307.looTW/iPhone3,3_5.1_9B176_Restore.ipsw
+iPhone3,3	5.1.1	9B206	http://appldnld.apple.com/iOS5.1.1/041-4291.20120427.Zs8F0/iPhone3,3_5.1.1_9B206_Restore.ipsw

@@ -1,0 +1,6 @@
+iPad4,4	7.0.3	11B511	http://appldnld.apple.com/iOS7/031-0897.20131022.Xbstt/iPad4,4_7.0.3_11B511_Restore.ipsw
+iPad4,4	7.0.4	11B554a	http://appldnld.apple.com/iOS7/031-1772.20131114.P3wE4/iPad4,4_7.0.4_11B554a_Restore.ipsw
+iPad4,4	7.0.6	11B651	http://appldnld.apple.com/iOS7/031-2961.20140221.8j5GW/iPad4,4_7.0.6_11B651_Restore.ipsw
+iPad4,4	7.1	11D167	http://appldnld.apple.com/iOS7.1/031-4496.20140310.K932s/iPad4,4_7.1_11D167_Restore.ipsw
+iPad4,4	7.1.1	11D201	http://appldnld.apple.com/iOS7.1/031-00236.20140425.uSDv7/iPad4,4_7.1.1_11D201_Restore.ipsw
+iPad4,4	7.1.2	11D257	http://appldnld.apple.com/iOS7.1/031-4793.20140627.Qm45v/iPad4,4_7.1.2_11D257_Restore.ipsw

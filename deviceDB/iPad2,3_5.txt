@@ -1,0 +1,4 @@
+iPad2,3	5.0	9A334	http://appldnld.apple.com/iPhone4/041-9620.20111012.pnB4r/iPad2,3_5.0_9A334_Restore.ipsw
+iPad2,3	5.0.1	9A405	http://appldnld.apple.com/iPhone4/041-3312.20111109.zp3ws/iPad2,3_5.0.1_9A405_Restore.ipsw
+iPad2,3	5.1	9B176	http://appldnld.apple.com/iOS5/041-1541.20120307.WrbS2/iPad2,3_5.1_9B176_Restore.ipsw
+iPad2,3	5.1.1	9B206	http://appldnld.apple.com/iOS5.1.1/041-4297.20120427.NAvbf/iPad2,3_5.1.1_9B206_Restore.ipsw

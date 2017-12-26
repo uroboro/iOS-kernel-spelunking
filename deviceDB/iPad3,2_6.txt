@@ -1,0 +1,5 @@
+iPad3,2	6.0	10A403	http://appldnld.apple.com/iOS6/Restore/041-7161.20120919.5CyjO/iPad3,2_6.0_10A403_Restore.ipsw
+iPad3,2	6.0.1	10A523	http://appldnld.apple.com/iOS6/041-7941.20121101.Sami5/iPad3,2_6.0.1_10A523_Restore.ipsw
+iPad3,2	6.1	10B141	http://appldnld.apple.com/iOS6.1/041-5907.20130128.tgt54/iPad3,2_6.1_10B141_Restore.ipsw
+iPad3,2	6.1.2	10B146	http://appldnld.apple.com/iOS6.1/091-0710.20130215.Vfgst/iPad3,2_6.1.2_10B146_Restore.ipsw
+iPad3,2	6.1.3	10B329	http://appldnld.apple.com/iOS6.1/091-2432.20130319.Be867/iPad3,2_6.1.3_10B329_Restore.ipsw

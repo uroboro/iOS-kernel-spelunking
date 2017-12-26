@@ -1,0 +1,5 @@
+iPod5,1	6.0	10A406	http://appldnld.apple.com/iOS6/Restore/041-3517.20120919.9ln3Q/iPod5,1_6.0_10A406_Restore.ipsw
+iPod5,1	6.0.1	10A523	http://appldnld.apple.com/iOS6/041-7438.20121101.Usre4/iPod5,1_6.0.1_10A523_Restore.ipsw
+iPod5,1	6.1	10B141	http://appldnld.apple.com/iOS6.1/041-6488.20130128.L3etg/iPod5,1_6.1_10B141_Restore.ipsw
+iPod5,1	6.1.2	10B146	http://appldnld.apple.com/iOS6.1/091-0731.20130215.At0tt/iPod5,1_6.1.2_10B146_Restore.ipsw
+iPod5,1	6.1.3	10B329	http://appldnld.apple.com/iOS6.1/091-2520.20130319.5gty7/iPod5,1_6.1.3_10B329_Restore.ipsw

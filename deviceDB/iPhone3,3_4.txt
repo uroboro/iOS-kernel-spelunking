@@ -1,0 +1,5 @@
+iPhone3,3	4.2.10	8E600	http://appldnld.apple.com/iPhone4/041-1959.20110721.jvP29/iPhone3,3_4.2.10_8E600_Restore.ipsw
+iPhone3,3	4.2.6	8E200	http://appldnld.apple.com/iPhone4/041-0177.20110131.Pyvrz/iPhone3,3_4.2.6_8E200_Restore.ipsw
+iPhone3,3	4.2.7	8E303	http://appldnld.apple.com/iPhone4/041-0614.20110414.B47xa/iPhone3,3_4.2.7_8E303_Restore.ipsw
+iPhone3,3	4.2.8	8E401	http://appldnld.apple.com/iPhone4/041-1022.20110503.5g8k7/iPhone3,3_4.2.8_8E401_Restore.ipsw
+iPhone3,3	4.2.9	8E501	http://appldnld.apple.com/iPhone4/041-1916.20110715.V5rUA/iPhone3,3_4.2.9_8E501_Restore.ipsw

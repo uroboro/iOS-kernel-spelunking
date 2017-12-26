@@ -1,0 +1,2 @@
+iPod7,1	8.4	12H143	http://appldnld.apple.com/ios8.4/ipsw/031-25940-20150630-7A549A0E-1B90-11E5-87A1-A763BE268FF7/iPod7,1_8.4_12H143_Restore.ipsw
+iPod7,1	8.4.1	12H321	http://appldnld.apple.com/ios8.4.1/031-31024-20150812-751694AA-3C8F-11E5-B90B-9D1A3A53DB92/iPod7,1_8.4.1_12H321_Restore.ipsw

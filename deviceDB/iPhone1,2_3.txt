@@ -1,0 +1,5 @@
+iPhone1,2	3.0	7A341	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-6578.20090617.VfgtU/iPhone1,2_3.0_7A341_Restore.ipsw
+iPhone1,2	3.0.1	7A400	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-6972.20090731.Zx3Rr/iPhone1,2_3.0.1_7A400_Restore.ipsw
+iPhone1,2	3.1	7C144	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-6600.20090909.AwndZ/iPhone1,2_3.1_7C144_Restore.ipsw
+iPhone1,2	3.1.2	7D11	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-7265.20091008.Xsd32/iPhone1,2_3.1.2_7D11_Restore.ipsw
+iPhone1,2	3.1.3	7E18	http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-7468.20100202.pbnrt/iPhone1,2_3.1.3_7E18_Restore.ipsw

@@ -1,0 +1,2 @@
+iPad3,1	5.1	9B176	http://appldnld.apple.com/iOS5/041-1954.20120307.FFase/iPad3,1_5.1_9B176_Restore.ipsw
+iPad3,1	5.1.1	9B206	http://appldnld.apple.com/iOS5.1.1/041-4327.20120427.xW6U6/iPad3,1_5.1.1_9B206_Restore.ipsw
