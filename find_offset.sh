@@ -3,13 +3,12 @@
 scripts/setup.sh
 
 db_file=${1:-deviceDB/iPod7,1_10.txt}
-echo $db_file
-exit
 
 IFS=$'\n' read -d '' -r -a devices < $db_file
 lines=$(wc -l $db_file | awk '{ print $1 }')
 
 for (( i = 0; i < $lines; i++ )); do
+# for (( i = 0; i < 1; i++ )); do
 	d=${devices[$i]}
 
 	device=$(echo $d | awk '{ print $1 }')
@@ -19,8 +18,25 @@ for (( i = 0; i < $lines; i++ )); do
 
 	echo "$device on $version ($buildid): $url"
 
-	kaches=$(scripts/cache.sh $url | grep kernelcache.release)
-	for f in $kaches; do
-		scripts/offsets.sh $f
-	done
+	if [[ ! -z "$(ls kernelDB/$device/$buildid/)" ]]; then
+		mkdir -p offsetDB/$device/$buildid
+		for f in kernelDB/$device/$buildid/*; do
+			header=offsetDB/$device/$buildid/$(basename $f).h
+			echo "// File automatically created with iOS-kernel-spelunking by uroboro" > $header
+			echo "// Device: $device" >> $header
+			echo "// Build: $buildid" >> $header
+			echo >> $header
+			scripts/offsets.sh $f | grep define >> $header
+		done
+	else
+		kaches=$(scripts/cache.sh $url | grep kernelcache.release)
+		for f in $kaches; do
+			header=offsetDB/$device/$buildid/$(basename $f).h
+			echo "// File automatically created with iOS-kernel-spelunking by uroboro" > $header
+			echo "// Device: $device" >> $header
+			echo "// Build: $buildid" >> $header
+			echo >> $header
+			scripts/offsets.sh $f | grep define >> $header
+		done
+	fi
 done

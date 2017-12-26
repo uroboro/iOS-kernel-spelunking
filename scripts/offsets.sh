@@ -15,10 +15,15 @@ function print_help() {
 function extract_kernel() {
 	file="$1"
 
+	if [[ $(du $file | awk '{ printf $1 }') == "0" ]]; then
+		echo "[#] Empty file. Bailing"
+		return 1
+	fi
+
 	error=$(joker -dec $file 2>&1)
 	err=$?
-	if [ ! -z $(echo $error | grep BVX) ]; then
-		img4 -image $file $kernelcache
+	if [[ ! -z $(echo $error | grep BVX) ]]; then
+		img4 -image $file $kernelcache &> /dev/null
 		return 0
 	elif [[ ! -z $(echo $error | grep IMG3) ]]; then
 		echo "[#] Can't handle img3 yet"
@@ -31,7 +36,7 @@ function extract_kernel() {
 		else
 			echo "[#] Unexpected error: $err"
 		fi
-		return 2
+		return 1
 	fi
 	return 0
 }
@@ -92,11 +97,11 @@ function address_ipc_port_make_send() {
 }
 
 function address_rop_add_x0_x0_0x10() {
-	r2 -q -e scr.color=true -c "\"/a add x0, x0, 0x10; ret\"" $1 2> /dev/null | head -n1 | awk '{ print $1 }'
+	r2 -q -e scr.color=true -c "\"/a add x0, x0, 0x10; ret\"" $1 2> /dev/null | grep -m 1 '0xff' | awk '{ print $1 }'
 }
 
 function address_rop_ldr_x0_x0_0x10() {
-	r2 -q -e scr.color=true -c "\"/a ldr x0, [x0, 0x10]; ret\"" $1 2> /dev/null | head -n1 | awk '{ print $1 }'
+	r2 -q -e scr.color=true -c "\"/a ldr x0, [x0, 0x10]; ret\"" $1 2> /dev/null | grep -m 1 '0xff' | awk '{ print $1 }'
 }
 
 function address_zone_map() {
