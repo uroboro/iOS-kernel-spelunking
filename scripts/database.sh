@@ -13,8 +13,8 @@ function usable_devices() {
 			buildid=$($pb -c "Print :devices:$device:firmwares:$i:filename" $file | sed 's/.*_\(.*\)_Restore.*/\1/')
 			url=$($pb -c "Print :devices:$device:firmwares:$i:url" $file)
 
-			ios=$(echo $version | sed 's/\./ /g' | awk '{ print "_" $1 }')
-			echo "$device\t$version\t$buildid\t$url" >> sorted/$device$ios.txt
+			ios=$(echo $version | sed 's/\./ /g' | awk '{ print "iOS" $1 }')
+			echo "$device\t$version\t$buildid\t$url" >> deviceDB/$ios/$device.txt
 		done
 	done
 }

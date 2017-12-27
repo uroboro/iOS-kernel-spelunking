@@ -9,36 +9,7 @@ function print_help() {
 	echo "$self [kernel cache]"
 	echo
 	echo "Example:"
-	echo "\t $self kernelcache.release.n102"
-}
-
-function extract_kernel() {
-	file="$1"
-
-	if [[ $(du $file | awk '{ printf $1 }') == "0" ]]; then
-		echo "[#] Empty file. Bailing"
-		return 1
-	fi
-
-	error=$(joker -dec $file 2>&1)
-	err=$?
-	if [[ ! -z $(echo $error | grep BVX) ]]; then
-		img4 -image $file $kernelcache &> /dev/null
-		return 0
-	elif [[ ! -z $(echo $error | grep IMG3) ]]; then
-		echo "[#] Can't handle img3 yet"
-		# img3 -image $f $f.dec
-		return 1
-	fi
-	if [ ! -f $kernelcache ]; then
-		if [[ ! -z $(echo $error | grep segmentation) ]]; then
-			echo "[#] Segfault :/"
-		else
-			echo "[#] Unexpected error: $err"
-		fi
-		return 1
-	fi
-	return 0
+	echo "\t $self kernelcache.release.n102.dec"
 }
 
 # Finder functions
@@ -183,11 +154,9 @@ else
 	exit 0
 fi
 
-echo "[#] Extracting..."
-extract_kernel $kache
-if [[ $? != 0 ]]; then
-	echo "[#] Failed extracting."
-	exit 1
+if [[ $(du $kache | awk '{ printf $1 }') == "0" ]]; then
+	echo "[#] Empty file. Bailing"
+	return 1
 fi
 
 strings $kernelcache | grep 'Darwin K'
@@ -214,21 +183,21 @@ offset_rop_ldr_x0_x0_0x10=$(address_rop_ldr_x0_x0_0x10 $kernelcache)
 
 rm $kernelcache
 
-echo "#define OFFSET_ZONE_MAP                        $offset_zone_map"
-echo "#define OFFSET_KERNEL_MAP                      $offset_kernel_map"
-echo "#define OFFSET_KERNEL_TASK                     $offset_kernel_task"
-echo "#define OFFSET_REALHOST                        $offset_host_priv_self"
-echo "#define OFFSET_BZERO                           $offset_bzero"
-echo "#define OFFSET_BCOPY                           $offset_bcopy"
-echo "#define OFFSET_COPYIN                          $offset_copyin"
-echo "#define OFFSET_COPYOUT                         $offset_copyout"
-echo "#define OFFSET_ROOTVNODE                       $offset_rootvnode"
-echo "#define OFFSET_CHGPROCCNT                      $offset_chgproccnt"
-echo "#define OFFSET_KAUTH_CRED_REF                  $offset_kauth_cred_ref"
-echo "#define OFFSET_IPC_PORT_ALLOC_SPECIAL          $offset_ipc_port_alloc_special"
-echo "#define OFFSET_IPC_KOBJECT_SET                 $offset_ipc_kobject_set"
-echo "#define OFFSET_IPC_PORT_MAKE_SEND              $offset_ipc_port_make_send"
-echo "#define OFFSET_IOSURFACEROOTUSERCLIENT_VTAB    $offset_iosurfacerootuserclient_vtab"
-echo "#define OFFSET_ROP_ADD_X0_X0_0x10              $offset_rop_add_x0_x0_0x10"
-echo "#define OFFSET_OSSERIALIZER_SERIALIZE          $offset_osserializer_serialize"
-echo "#define OFFSET_ROP_LDR_X0_X0_0x10              $offset_rop_ldr_x0_x0_0x10"
+echo "OFFSET_ZONE_MAP                        = $offset_zone_map;"
+echo "OFFSET_KERNEL_MAP                      = $offset_kernel_map;"
+echo "OFFSET_KERNEL_TASK                     = $offset_kernel_task;"
+echo "OFFSET_REALHOST                        = $offset_host_priv_self;"
+echo "OFFSET_BZERO                           = $offset_bzero;"
+echo "OFFSET_BCOPY                           = $offset_bcopy;"
+echo "OFFSET_COPYIN                          = $offset_copyin;"
+echo "OFFSET_COPYOUT                         = $offset_copyout;"
+echo "OFFSET_ROOT_MOUNT_V_NODE               = $offset_rootvnode;"
+echo "OFFSET_CHGPROCCNT                      = $offset_chgproccnt;"
+echo "OFFSET_KAUTH_CRED_REF                  = $offset_kauth_cred_ref;"
+echo "OFFSET_IPC_PORT_ALLOC_SPECIAL          = $offset_ipc_port_alloc_special;"
+echo "OFFSET_IPC_KOBJECT_SET                 = $offset_ipc_kobject_set;"
+echo "OFFSET_IPC_PORT_MAKE_SEND              = $offset_ipc_port_make_send;"
+echo "OFFSET_IOSURFACEROOTUSERCLIENT_VTAB    = $offset_iosurfacerootuserclient_vtab;"
+echo "OFFSET_ROP_ADD_X0_X0_0x10              = $offset_rop_add_x0_x0_0x10;"
+echo "OFFSET_OSSERIALIZER_SERIALIZE          = $offset_osserializer_serialize;"
+echo "OFFSET_ROP_LDR_X0_X0_0x10              = $offset_rop_ldr_x0_x0_0x10;"
