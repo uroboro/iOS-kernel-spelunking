@@ -1,8 +1,8 @@
 #!/bin/sh
 
 function usable_devices() {
-	file="$1"
-	pb=/usr/libexec/PlistBuddy
+	pb="$1"
+	file="$2"
 
 	rm -r deviceDB
 	devices=$($pb -c "Print :devices" $file | grep '^    [i]' | awk '{ print $1 }' | sort)
@@ -20,11 +20,12 @@ function usable_devices() {
 	done
 }
 
-if [ ! -f /usr/libexec/PlistBuddy ]; then
-	echo "[#] No PlistBuddy to work with. Bailing"
+plistTool=${1:-/usr/libexec/PlistBuddy}
+if [ ! -f $plistTool ]; then
+	echo "[#] No PlistBuddy compatible tool to work with. Bailing"
 	exit 1
 fi
 
 curl -s https://api.ipsw.me/v2.1/firmwares.json/condensed -o firmwares.plist
 plutil -convert xml1 firmwares.plist
-usable_devices firmwares.plist
+usable_devices $plistTool firmwares.plist
