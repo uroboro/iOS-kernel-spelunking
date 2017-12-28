@@ -1,3 +1,2 @@
 bin
-cacheDB
-kernelDB
+*DB
