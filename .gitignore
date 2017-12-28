@@ -1,5 +1,4 @@
 bin
-cacheDB
-kernelDB
-.DS_Store
 *DB
+.DS_Store
+firmwares.plist
