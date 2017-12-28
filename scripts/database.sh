@@ -13,6 +13,7 @@ function usable_devices() {
 			buildid=$($pb -c "Print :devices:$device:firmwares:$i:filename" $file | sed 's/.*_\(.*\)_Restore.*/\1/')
 			url=$($pb -c "Print :devices:$device:firmwares:$i:url" $file)
 			ios=$(echo $version | sed 's/\./ /g' | awk '{ print "iOS" $1 }')
+
 			mkdir -p deviceDB/$ios
 			echo "$device\t$version\t$buildid\t$url" >> deviceDB/$ios/$device.txt
 		done
@@ -24,5 +25,5 @@ if [ ! -f /usr/libexec/PlistBuddy ]; then
 	exit 1
 fi
 
-curl -s http://api.ipsw.me/v2.1/firmwares.json/condensed -o firmwares.plist
+curl -s https://api.ipsw.me/v2.1/firmwares.json/condensed -o firmwares.plist
 usable_devices firmwares.plist
