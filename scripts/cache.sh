@@ -4,8 +4,8 @@ export PATH=$(pwd)/bin:$PATH
 
 function print_help() {
 	self=$1
-	echo "$self [IPSW path]"
-	echo "$self [device model] [ios build]"
+	echo "$self [IPSW path] [output path]"
+	echo "$self [device model] [ios build] [output path]"
 	echo
 	echo "Examples:"
 	echo "\t $self iPodtouch_10.3.3_14G60_Restore.ipsw"
@@ -16,13 +16,20 @@ function print_help() {
 
 function extract_from_ipsw() {
 	file="$1"
+	outputPath=${2%/}
+
 	kaches=$(unzip -l $file | grep kernelcache | awk '{ print $NF }')
 	unzip $file $kaches &> /dev/null
-	echo $kaches
+	mv $kaches $outputPath
+
+	for f in $kaches; do
+		echo $outputPath/$f
+	done
 }
 
 function extract_from_url() {
 	url="$1"
+	outputPath=${2%/}
 
 	tries=0
 	err=1
@@ -53,22 +60,28 @@ function extract_from_url() {
 				err=$?
 				echo "[#] Couldn't download $f. Retrying..."
 			done
+			mv $f $outputPath/
 		fi
 	done
-	echo $kaches
+
+	for f in $kaches; do
+		echo $outputPath/$f
+	done
 }
 
 # Main program
 
-if [ $# -eq 2 ]; then
+if [ $# -eq 3 ]; then
 	file=$(curl -s https://api.ipsw.me/v2.1/$1/$2/url)
-	extract_from_url $file
-elif [ $# -eq 1 ]; then
-	file=$1
+	outputPath="$3"
+	extract_from_url $file $outputPath
+elif [ $# -eq 2 ]; then
+	file="$1"
+	outputPath="$2"
 	if [[ $file == "http"* ]]; then
-		extract_from_url $file
+		extract_from_url $file $outputPath
 	else
-		extract_from_ipsw $file
+		extract_from_ipsw $file $outputPath
 	fi
 else
 	print_help $0
