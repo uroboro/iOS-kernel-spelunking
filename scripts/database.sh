@@ -27,4 +27,5 @@ if [ ! -f $plistTool ]; then
 fi
 
 curl -s https://api.ipsw.me/v2.1/firmwares.json/condensed -o firmwares.plist
+plutil -convert xml1 firmwares.plist
 usable_devices $plistTool firmwares.plist
