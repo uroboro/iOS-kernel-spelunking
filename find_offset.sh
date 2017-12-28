@@ -17,7 +17,7 @@ function make_header() {
 	echo "// Build: $buildID" >> $header
 	echo >> $header
 	echo "static void setOffsets_${device/,/_}_$buildID(void) {" >> $header
-	scripts/offsets.sh $file | grep define >> $header
+	scripts/offsets.sh $file | grep '=' >> $header
 	echo "}" >> $header
 }
 
@@ -46,6 +46,6 @@ for (( i = 0; i < $lines; i++ )); do
 
 	offsetDBPath=offsetDB/$ios/$device/$buildID
 	for f in $kaches; do
-		echo make_header $f $device $version $buildID $offsetDBPath
+		make_header $f $device $version $buildID $offsetDBPath
 	done
 done
