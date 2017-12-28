@@ -2,8 +2,6 @@
 
 export PATH=$(pwd)/bin:$PATH
 
-kernelcache=/tmp/kernel
-
 function print_help() {
 	self=$1
 	echo "$self [kernel cache]"
@@ -148,7 +146,7 @@ function address_iosurfacerootuserclient_vtab() {
 # Main program
 
 if [ $# -eq 1 ]; then
-	kache="$1"
+	kernelcache="$1"
 else
 	print_help $0
 	exit 0
@@ -180,8 +178,6 @@ offset_iosurfacerootuserclient_vtab=$(address_iosurfacerootuserclient_vtab $kern
 offset_rop_add_x0_x0_0x10=$(address_rop_add_x0_x0_0x10 $kernelcache)
 offset_osserializer_serialize=$(address_osserializer_serialize $kernelcache)
 offset_rop_ldr_x0_x0_0x10=$(address_rop_ldr_x0_x0_0x10 $kernelcache)
-
-rm $kernelcache
 
 echo "OFFSET_ZONE_MAP                        = $offset_zone_map;"
 echo "OFFSET_KERNEL_MAP                      = $offset_kernel_map;"
