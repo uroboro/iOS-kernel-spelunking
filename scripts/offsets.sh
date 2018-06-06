@@ -20,6 +20,10 @@ function address_kernel_task() {
 	nm $1 | grep ' _kernel_task$' | awk '{ print "0x" $1 }'
 }
 
+function address_kernproc() {
+	nm $1 | grep ' _kernproc$' | awk '{ print "0x" $1 }'
+}
+
 function address_bzero() {
 	nm $1 | grep ' ___bzero$' | awk '{ print "0x" $1 }'
 }
@@ -46,6 +50,10 @@ function address_kauth_cred_ref() {
 
 function address_osserializer_serialize() {
 	nm $1 | grep ' __ZNK12OSSerializer9serializeEP11OSSerialize$' | awk '{ print "0x" $1 }'
+}
+
+function address_get_metaclass() {
+	nm $1 | grep ' __ZNK8OSString12getMetaClassEv$' | awk '{ print "0x" $1 }'
 }
 
 function address_host_priv_self() {
@@ -163,6 +171,7 @@ echo "[#] Working..."
 offset_zone_map=$(address_zone_map $kernelcache)
 offset_kernel_map=$(address_kernel_map $kernelcache)
 offset_kernel_task=$(address_kernel_task $kernelcache)
+offset_kernproc=$(address_kernproc $kernelcache)
 offset_host_priv_self=$(address_host_priv_self $kernelcache)
 offset_bzero=$(address_bzero $kernelcache)
 offset_bcopy=$(address_bcopy $kernelcache)
@@ -177,11 +186,13 @@ offset_ipc_port_make_send=$(address_ipc_port_make_send $kernelcache)
 offset_iosurfacerootuserclient_vtab=$(address_iosurfacerootuserclient_vtab $kernelcache)
 offset_rop_add_x0_x0_0x10=$(address_rop_add_x0_x0_0x10 $kernelcache)
 offset_osserializer_serialize=$(address_osserializer_serialize $kernelcache)
+offset_get_metaclass=$(address_get_metaclass $kernelcache)
 offset_rop_ldr_x0_x0_0x10=$(address_rop_ldr_x0_x0_0x10 $kernelcache)
 
 echo "OFFSET_ZONE_MAP                        = $offset_zone_map;"
 echo "OFFSET_KERNEL_MAP                      = $offset_kernel_map;"
 echo "OFFSET_KERNEL_TASK                     = $offset_kernel_task;"
+echo "OFFSET_KERNPROC                        = $offset_kernproc;"
 echo "OFFSET_REALHOST                        = $offset_host_priv_self;"
 echo "OFFSET_BZERO                           = $offset_bzero;"
 echo "OFFSET_BCOPY                           = $offset_bcopy;"
@@ -196,4 +207,5 @@ echo "OFFSET_IPC_PORT_MAKE_SEND              = $offset_ipc_port_make_send;"
 echo "OFFSET_IOSURFACEROOTUSERCLIENT_VTAB    = $offset_iosurfacerootuserclient_vtab;"
 echo "OFFSET_ROP_ADD_X0_X0_0x10              = $offset_rop_add_x0_x0_0x10;"
 echo "OFFSET_OSSERIALIZER_SERIALIZE          = $offset_osserializer_serialize;"
+echo "OFFSET_GET_METACLASS                   = $offset_get_metaclass;"
 echo "OFFSET_ROP_LDR_X0_X0_0x10              = $offset_rop_ldr_x0_x0_0x10;"
